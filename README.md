@@ -1,7 +1,7 @@
 # MvcMovie App
 # Xavier Nazario
 
-# Desription
+# Description
 This is a web application that shows a list of movies including the title, genre, release date, price, and parental guidance rating. It features include allowing a user to creating, editing, and deleting entries into the list. Users are also able to search for movies by filtering through genre. 
 
 # How to run the application locally
