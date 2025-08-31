@@ -22,4 +22,5 @@ Step 4: Run the application using the command "npm start"
 This program has been structured by keeping the business and user-interface code separate. By following the 
 separation of concern principle, the business and user-interface logic allows for the program to grow and change
 while being able to efficiently maintain and test the code over time. This was achived through the use of dependency
-injection in order to manage the dependencies in any class.
+injection in order to manage the dependencies in any class. The dependency injection choices include using
+constructor injection for needed services, using interfaces, and correct lifetimes like scoped for data services and singleton for shared resources.
