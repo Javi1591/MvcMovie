@@ -1,8 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using MvcMovie.Data;
-using MvcMovie.Models;
+using MvcMovie.Features.Movies.Models;
 
-namespace MvcMovie.Services
+namespace MvcMovie.Features.Movies.Services
 {
     public class MovieService : IMovieService
     {
