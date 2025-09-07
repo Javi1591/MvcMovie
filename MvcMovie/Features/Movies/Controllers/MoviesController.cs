@@ -154,8 +154,8 @@ namespace MvcMovie.Features.Movies.Controllers
         }
 
         // GET: /movies/released/2010/5
-        [HttpGet("released/{year:int:min(1900)}/{month:int?:range(1,12)?}")]
-        public async Task<IActionResult> Released(int year, int month)
+        [HttpGet("released/{year:int:min(1900)}/{month:int:range(1,12)?}")]
+        public async Task<IActionResult> Released(int year, int? month)
         {
             var all = await _movies.GetAllAsync();
             var movies = all.Where(movie => movie.ReleaseDate.Year == year && (month == 0 ? true : movie.ReleaseDate.Month == month));
